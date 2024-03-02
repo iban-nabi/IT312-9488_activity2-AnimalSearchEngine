@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animalphabet</title>
+    <link rel="icon" type="image" href="res/pet.png">
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <div class="title">
+                <h1 id="title">Animalphabet</h1>
+                <h3>An animal search tool</h3>
+            </div>
+            <input type="text" id="animal-input" placeholder="Enter an animal to search">
+            <button id="submit" type="submit">&#128269;</button>
+
+            <div class="wrapper">
+                <button id="toggle-filtering" class="filter-buttons">Show Filtering Options ▼</button><br>
+                   
+                <div id="filter">
+                    
+                    <h4>FILTER OPTIONS</h4>
+                    <div class="class-part">
+                      <label for="class">Class:</label>
+                      <hr>
+                    <div id="class">
+                    </div>  
+                    </div>
+
+
+                    <div class="order-part">
+                       <label for="order">Order:</label>
+                       <hr>
+                    <div id="order">
+                    </div> 
+                    </div>
+                    
+                    <div class="fam">
+                        <label for="family">Family:</label>
+                        <hr>
+                    <div id="family">
+                    </div>
+                    </div>
+                    
+                    <div class="genus-p">
+                       <label for="genus">Genus:</label>
+                       <hr>
+                    <div id="genus">
+                    </div> 
+                    </div>
+                    
+                    <div class="loc">
+                     <label for="locations">Locations:</label>
+                     <hr>
+                    <div id="locations">
+                    </div>   
+                    </div>
+                    
+                    <button id="apply-filters" class="filter-buttons">Apply Filters</button>
+                    <hr>
+                </div>
+
+                <button id="toggle-sorting" class="sorting-buttons">Show Sorting Options ▼</button>
+                <div id="sort">
+                    <hr>
+    
+                    <label for="sort-by">Sort by:</label>
+                    <div id = "sort-by"></div>
+                
+                    <label for="properties">Properties:</label>
+                    <div id = "properties"></div>
+    
+                    <button id="apply-sort" class="sorting-buttons">Apply Sorting</button>
+                    <hr>
+                </div>
+
+                <h2 id="search-results">Processing...</h2>
+                <div id="loading">
+                    <img src="res/loading.gif" alt="loading...">
+                </div>
+            </div>
+        </div>
+        <div id="animal-data"></div>
+        <div id="pagination-container"></div>
+    </div>
+</body>
+
+</html>

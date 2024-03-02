@@ -1,0 +1,351 @@
+@font-face {
+    font-family: "Montserrat-Black";
+    src: url(../res/fonts/static/Montserrat-Black.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../res/fonts/static/Montserrat-Regular.ttf);
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../res/pexels-jeswin-thomas-2874752.jpg);
+    /* Replace 'your-image.jpg' with the URL or path to your image */
+    background-attachment: fixed;
+    background-size: cover;
+    /* Optional: Adjust to your needs */
+    background-repeat: no-repeat;
+    /* Optional: Adjust to your needs */
+}
+
+h1 {
+    font-size: 110px;
+    font-family: "Montserrat-Black";
+}
+
+h3 {
+    font-family: "Montserrat-Black";
+}
+
+p, h1, h3 {
+    color: white;
+}
+
+p, button, label, h4 {
+    font-family: "Montserrat-Regular";
+}
+
+
+
+input {
+    justify-content: space-between;
+    width: 80%;
+    height: 70px;
+    background-color: #ecffea;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 27px;
+    padding: 0 15px;
+}
+
+iframe {
+    display: block;
+    padding-bottom: 5%;
+}
+
+.title h1{
+    align-self: center;
+    margin: unset;
+}
+
+.title h3{
+    margin-bottom:5%;
+}
+
+#submit {
+    height: 70px;
+    border-radius: 50px;
+    font-size: 150%;
+    width: 10%;
+    border: none;
+    outline: none;
+    background-color: #8fff82;
+    color: #063b00;
+}
+
+
+/*START of codes for filter functionality */
+#filter {
+    position: absolute;
+    display: none;
+    margin-bottom: 5px;
+    margin-top: 270px;
+    margin-left: -161px;
+    max-width: 200px;
+    background-color:rgba(0, 0, 0, 0.697);
+}
+
+#filter>div {
+    border: 1px solid #ecffea;
+    padding: 10px;
+    color: #ecffea;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(0, 0, 0, 0.697);
+}
+
+#filter label {
+    display: block;
+    color: #ecffea;
+    padding-left: 10px;
+    width: fit-content;
+    font-size: 14.5px;
+}
+
+
+#order label{
+    word-wrap: break-word;
+}
+
+#filter input {
+    width: 16px;
+    height: 16px;
+    color: #ecffea;
+    position: relative;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    text-align: left;
+}
+.class-part .class, .fam .family, .loc .locations, .genus-p .genus, .order-part .order{
+    display: inline;
+    margin-top: 0px;
+}
+
+h4{
+    text-align: center;
+    color: #ffff;
+    font-size: 15px;
+}
+
+.filter-buttons {
+    max-width: 900px;
+    padding-bottom: 5px;
+    border: none;
+    outline: none;
+    background-color: #8fff82;
+    color: #063b00;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    display: absolute;
+}
+
+#toggle-filtering {
+    position: absolute;
+    top: 580px;
+    margin-left: -660px;
+    display: none;
+    align-items: center;
+    width: 200px;
+    height: 10%;
+}
+
+#apply-filters {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: fit-content;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+/*END of codes for filter functionality */
+
+/*START of codes for sorting functionality */
+#sort {
+    position: absolute;
+    display: none;
+    margin-bottom: 5px;
+    margin-top: 270px;
+    margin-left: 972px;
+    max-width: 200px;
+    background-color:rgba(0, 0, 0, 0.697);
+}
+
+#sort>div {
+    border: 1px solid #ecffea;
+    padding: 10px;
+    color: #ecffea;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(0, 0, 0, 0.697);
+}
+
+#sort label {
+    display: block;
+    color: #ecffea;
+    white-space: nowrap;
+    padding-left: 10px;
+    width: fit-content;
+}
+
+#sort input {
+    width: 16px;
+    height: 16px;
+    color: #ecffea;
+    white-space: nowrap;
+    position: relative;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    text-align: left;
+}
+
+.sorting-buttons {
+    max-width: 900px;
+    padding-bottom: 5px;
+    border: none;
+    outline: none;
+    background-color: #8fff82;
+    color: #063b00;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    display: absolute;
+}
+
+#toggle-sorting {
+    position: absolute;
+    top: 580px;
+    margin-left: 460px;
+    display: none;
+    align-items: center;
+    width: 200px;
+    height: 10%;
+}
+
+#apply-sort {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: fit-content;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+/*END of codes for sorting functionality */
+
+#search-results {
+    align-self: center;
+    text-align: center;
+    display: none;
+    font-size: 30px;
+    font-family: "Montserrat-Black";
+    color: white;
+    margin-bottom: 30px;
+    margin-top: -40px;
+    padding-top: 40px;
+}
+
+#loading img {
+    width: 40px; 
+    height: auto;
+}
+
+.wrapper {
+    margin-top: 10%;
+    align-content: center;
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+}
+
+.main {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 3%;
+    height: auto;
+    max-width: 100%;
+}
+
+.main div {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.animal-section {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.697);
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    border:1px solid rgb(255, 255, 255);
+}
+
+#animal-data .animal-section{
+    margin-bottom: 5%;
+}
+
+.content {
+    flex-basis: 48%;
+    padding: 20px;
+    padding-top: 5px;
+}
+
+.animal-section p {
+    font-size: 19px;
+    margin-left: 5%;
+}
+
+.content .animal-name {
+    color: #8fff82;
+    font-size: 27px;
+}
+
+.content :last-child {
+    font-style: italic;
+}
+
+iframe {
+    margin-top: 10%;
+}
+
+#pagination-container {
+    margin-top: 50px;
+    max-width: 700px;
+    border-radius: 5px;
+    padding: .5% 5% .5% 5%;
+    height: auto;
+    background: #ecffeabe;
+    display: none;
+}
+
+button {
+    margin: 10px 10px 10px 10px;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #20461c;
+    border: 0px;
+    color: #ecffea;
+    cursor: pointer;
+}
+
+button#active{
+    background-color: black;
+}
+
+button:hover{
+    background-color: #be7570;
+}
